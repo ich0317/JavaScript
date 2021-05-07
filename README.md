@@ -123,6 +123,23 @@
 ```
 
 ## <a id="fn">函数</a>
+1.两元素是否包含关系，适用于点击非弹窗区域关闭弹窗 compareDocumentPosition/contains
+```
+var p1=document.getElementById("p1");
+var p2=document.getElementById("p2");
+p1.compareDocumentPosition(p2);
+//返回结果 ie8+
+//   0              元素一致 
+//   1              节点在不同的文档（或者一个在文档之外） 
+//   2              节点 p2 在节点 p1 之前 
+//   4              节点 p1 在节点 p2 之前 
+//   8              节点 p2 包含节点 p1 
+//   16             节点 p1 包含节点 p2 
+//   32             浏览器的私有使用
+//   20             一旦一个节点 p1 包含另一个节点 p2，包含 p2（+16） 且在 p1 之前（+4），则最后的结果是数字 20  
+
+p1.contains(p2)   // 如果p1包含p2 返回true 否则返回false
+```
 
 ## <a id="number">数字</a>
 1. 生成指定范围的随机整数
