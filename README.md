@@ -1,5 +1,5 @@
-# <center>**JavaScript 技巧汇总**</center>
-本文收集了前端工作中可能会用到的一些JS技巧或方法，目的在于大家学习交流。资料大多来自网络，陆续会逐步丰富。
+# <center>**JavaScript 笔记**</center>
+本文收集了前端工作中可能会用到的一些JS方法属性。
 
 ## 目录  
 - [位运算](#operators)
